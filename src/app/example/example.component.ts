@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ExampleComponent {
   @Input() name: string = "";
+  @Input() age: string = "";
+  @Input() hairColor: string = "";
 }
