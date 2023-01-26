@@ -1,5 +1,8 @@
-<app-counter-button>
+<app-congratulations-message [count]="count" [threshold]="threshold"></app-congratulations-message>
 
+<app-counter-button
+  [count]="count"
+  (buttonClicked)="incrementCount()">
 </app-counter-button>
 
 <router-outlet></router-outlet>
