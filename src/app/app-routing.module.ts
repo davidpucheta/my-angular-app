@@ -7,6 +7,7 @@ import { MultipleChoiceComponent } from './multiple-choice/multiple-choice.compo
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { ParamsExampleComponent } from './params-example/params-example.component';
 import { PeopleListComponent } from './people-list/people-list.component';
+import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 
 const routes: Routes = [
   { path: 'counter-button', component: CounterButtonPageComponent },
@@ -15,8 +16,9 @@ const routes: Routes = [
   { path: 'multiple-choice', component: MultipleChoiceComponent },
   { path: 'people-list', component: PeopleListComponent },
   { path: 'params-example/:urlParam/:anotherParam', component: ParamsExampleComponent },
+  { path: 'user-info-form', component: UserInfoFormComponent },
   { path: '**', component: NotFoundPageComponent },
-  { path: '', redirectTo: 'counter-button', pathMatch: 'full' }
+  { path: '', redirectTo: 'counter-button', pathMatch: 'full' },
 ];
 
 @NgModule({
