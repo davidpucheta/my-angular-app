@@ -17,9 +17,8 @@ export class UserInfoDisplayComponent implements OnInit {
 
   ngOnInit(): void {
     this.userIfoService.loadData()
-    .subscribe(data => {
-      console.log(data.results);
-      this.info = data.results[0];
+    .subscribe(userInfo => {
+      this.info = userInfo;
       this.isLoading = false;
     });
   }
