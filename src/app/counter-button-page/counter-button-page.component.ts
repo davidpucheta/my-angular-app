@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class CounterButtonPageComponent {
   count:number = 0;
-  threshold:number = 10;
+  threshold:number = 5;
   showCounterButton:boolean = true;
 
   constructor(private router: Router ) {

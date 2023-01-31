@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-counter-button',
@@ -8,6 +9,7 @@ import { Component, Input, Output, EventEmitter, OnInit, OnDestroy } from '@angu
 export class CounterButtonComponent implements OnInit, OnDestroy {
   @Input() count:number = 0;
   @Output() buttonClicked = new EventEmitter<void>();
+  pointerIcon = faHandPointer;
 
   ngOnDestroy(): void {
     console.log('In ngOnDestroy');
