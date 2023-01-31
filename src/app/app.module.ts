@@ -23,6 +23,7 @@ import { SuccessButtonComponent } from './success-button/success-button.componen
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from "@angular/material/button";
+import { TipSectionComponent } from './tip-section/tip-section.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MatButtonModule } from "@angular/material/button";
     UserInfoDisplayComponent,
     ButtonComponent,
     DangerButtonComponent,
-    SuccessButtonComponent
+    SuccessButtonComponent,
+    TipSectionComponent
   ],
   imports: [
     BrowserModule,
